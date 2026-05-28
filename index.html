@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InclusivFood - Vitrine Adaptada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1> InclusivFood 🌾</h1>
+            <p> Vitrine inteligente de segurança alimentar adaptada para o seu perfil</p>
+        </header>
+
+        <div class="conteudo-layout">
+            
+            <aside class="painel-lateral">
+                <div class="secao-painel">
+                    <h3>*👤 Perfil Alimentar*</h3>
+                    <p class="instrucao">*Selecione quem está consumindo:*</p>
+                    <select id="select-perfil" class="select-custom">
+                        <option value="OPÇÃO">*ESCOLHA UMA OPÇÀO*</option>
+                        <option value="Alergia Geral">Tenho Alergia Alimentar</option>
+                        <option value="Mãe de Criança Autista (TEA)">Mãe de filho com TEA</option>
+                        <option value="Perfil Diabético">Pessoa Diabética</option>
+                        <option value="Intolerância à Lactose">Intolerante à Lactose</option>
+                    </select>
+                </div>
+
+                <div class="secao-painel">
+                    <h3>*🚫 Ingredientes a Evitar*</h3>
+                    <p class="instrucao">Digite os termos separados por vírgula:</p>
+                    <textarea id="input-customizado" class="textarea-custom" placeholder="Ex: leite, açucar, corante, morango"></textarea>
+                </div>
+            </aside>
+
+            <main class="conteudo-principal">
+                
+                <div id="main-product" class="barra-status">
+                    <p id="product-status">Carregando análises de segurança...</p>
+                    <span id="product-title" style="display:none;"></span>
+                    <span id="product-brand" style="display:none;"></span>
+                    <img id="product-img" src="" style="display:none;" alt="">
+                </div>
+
+                <div class="vitrine-container">
+                    <h2>📋 3 Alimentos Indicados para Você:</h2>
+                    
+                    <div class="grade-recomendados">
+                        
+                        <div class="card-alimento">
+                            <span class="selo-seguro">✓ Seguro</span>
+                            <div class="container-img">
+                                <img id="card-img-1" src="https://via.placeholder.com/150?text=Carregando" alt="Alimento 1">
+                            </div>
+                            <div class="detalhes-alimento">
+                                <h4 id="card-title-1">Buscando...</h4>
+                                <p id="card-brand-1">Marca</p>
+                            </div>
+                        </div>
+
+                        <div class="card-alimento">
+                            <span class="selo-seguro">✓ Seguro</span>
+                            <div class="container-img">
+                                <img id="card-img-2" src="https://via.placeholder.com/150?text=Carregando" alt="Alimento 2">
+                            </div>
+                            <div class="detalhes-alimento">
+                                <h4 id="card-title-2">Buscando...</h4>
+                                <p id="card-brand-2">Marca</p>
+                            </div>
+                        </div>
+
+                        <div class="card-alimento">
+                            <span class="selo-seguro">✓ Seguro</span>
+                            <div class="container-img">
+                                <img id="card-img-3" src="https://via.placeholder.com/150?text=Carregando" alt="Alimento 3">
+                            </div>
+                            <div class="detalhes-alimento">
+                                <h4 id="card-title-3">Buscando...</h4>
+                                <p id="card-brand-3">Marca</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
